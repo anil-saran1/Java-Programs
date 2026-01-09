@@ -6,7 +6,7 @@ public class BinaryToDecimal{
 
        while(binNum >0){
         int lastDigit= binNum % 10;
-        decNum = decNum +(lastDigit * (int)Math.pow(2,pow));
+        decNum = decNum +(lastDigit * (int)Math.pow(2,pow));//typecast becoz it returns decimal
         pow++;
         binNum=binNum/10;
        }
